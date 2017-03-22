@@ -2,7 +2,7 @@ require_relative 'lavish_enumerator'
 
 module LookAndSay
   def read_off_digits
-    to_int.to_s.chars.chunk(&:to_i).map{ |number, ary| "#{ary.length}#{number}"}.join.to_i
+    to_int.abs.to_s.chars.chunk(&:to_i).map{ |number, ary| "#{ary.length}#{number}"}.join.to_i
   end
 
   def look_and_say
