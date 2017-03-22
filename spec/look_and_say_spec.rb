@@ -1,7 +1,7 @@
 require_relative '../lib/look_and_say'
 
 RSpec.describe LookAndSay do
-	before(:each){ Integer.include(LookAndSay) }
+  before(:each){ Integer.include(LookAndSay) }
 
   it "read off the digits of member, counting the number of digits in groups of the same digit" do
     expect(111221.read_off_digits).to eq(312211)
